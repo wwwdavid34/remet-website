@@ -1,6 +1,11 @@
-import Link from 'next/link'
+'use client'
+
+import { useTranslations } from 'next-intl'
+import { Link } from '@/i18n/routing'
 
 export function Footer() {
+  const t = useTranslations('footer')
+
   return (
     <footer className="bg-navy-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -26,29 +31,29 @@ export function Footer() {
               <span className="text-xl font-bold">Remet</span>
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Helping people with prosopagnosia build lasting memories of the faces that matter most.
+              {t('brand')}
             </p>
           </div>
 
           {/* Product */}
           <div>
             <h4 className="font-semibold text-sm uppercase tracking-wider text-gray-300 mb-4">
-              Product
+              {t('product')}
             </h4>
             <ul className="space-y-3">
               <li>
                 <Link href="/#features" className="text-gray-400 hover:text-white transition-colors">
-                  Features
+                  {t('features')}
                 </Link>
               </li>
               <li>
                 <Link href="/#pricing" className="text-gray-400 hover:text-white transition-colors">
-                  Pricing
+                  {t('pricing')}
                 </Link>
               </li>
               <li>
                 <Link href="/#how-it-works" className="text-gray-400 hover:text-white transition-colors">
-                  How It Works
+                  {t('howItWorks')}
                 </Link>
               </li>
             </ul>
@@ -57,17 +62,17 @@ export function Footer() {
           {/* Legal */}
           <div>
             <h4 className="font-semibold text-sm uppercase tracking-wider text-gray-300 mb-4">
-              Legal
+              {t('legal')}
             </h4>
             <ul className="space-y-3">
               <li>
                 <Link href="/privacy" className="text-gray-400 hover:text-white transition-colors">
-                  Privacy Policy
+                  {t('privacyPolicy')}
                 </Link>
               </li>
               <li>
                 <Link href="/terms" className="text-gray-400 hover:text-white transition-colors">
-                  Terms of Service
+                  {t('termsOfService')}
                 </Link>
               </li>
             </ul>
@@ -76,17 +81,17 @@ export function Footer() {
           {/* Support */}
           <div>
             <h4 className="font-semibold text-sm uppercase tracking-wider text-gray-300 mb-4">
-              Support
+              {t('supportTitle')}
             </h4>
             <ul className="space-y-3">
               <li>
                 <Link href="/support" className="text-gray-400 hover:text-white transition-colors">
-                  Help Center
+                  {t('helpCenter')}
                 </Link>
               </li>
               <li>
                 <a href="mailto:support@remet-app.com" className="text-gray-400 hover:text-white transition-colors">
-                  Contact Us
+                  {t('contactUs')}
                 </a>
               </li>
             </ul>
@@ -96,7 +101,7 @@ export function Footer() {
         {/* Bottom bar */}
         <div className="mt-12 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-500 text-sm">
-            &copy; {new Date().getFullYear()} Remet. All rights reserved.
+            {t('copyright', { year: new Date().getFullYear() })}
           </p>
           <div className="flex items-center gap-6">
             <a href="#" className="text-gray-400 hover:text-white transition-colors">

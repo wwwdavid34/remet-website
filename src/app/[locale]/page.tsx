@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import { useTranslations } from 'next-intl'
 import {
   Camera,
   Brain,
@@ -31,6 +32,47 @@ const stagger = {
 }
 
 export default function Home() {
+  const t = useTranslations('home')
+
+  const features = [
+    {
+      icon: Camera,
+      titleKey: 'captureImport',
+      color: 'text-coral-500',
+      bg: 'bg-coral-50',
+    },
+    {
+      icon: Users,
+      titleKey: 'peopleProfiles',
+      color: 'text-teal-500',
+      bg: 'bg-teal-50',
+    },
+    {
+      icon: Brain,
+      titleKey: 'spacedRepetition',
+      color: 'text-purple-500',
+      bg: 'bg-purple-50',
+    },
+    {
+      icon: MapPin,
+      titleKey: 'encounterTracking',
+      color: 'text-amber-500',
+      bg: 'bg-amber-50',
+    },
+    {
+      icon: Tags,
+      titleKey: 'smartTagging',
+      color: 'text-blue-500',
+      bg: 'bg-blue-50',
+    },
+    {
+      icon: BarChart3,
+      titleKey: 'progressInsights',
+      color: 'text-green-500',
+      bg: 'bg-green-50',
+    },
+  ]
+
   return (
     <>
       {/* Hero Section */}
@@ -57,7 +99,7 @@ export default function Home() {
               >
                 <Sparkles className="w-4 h-4 text-coral-500" />
                 <span className="text-sm font-medium text-navy-700">
-                  Assistive Technology for Face Blindness
+                  {t('hero.badge')}
                 </span>
               </motion.div>
 
@@ -65,17 +107,15 @@ export default function Home() {
                 variants={fadeInUp}
                 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-navy-900 leading-tight mb-6"
               >
-                Remember{' '}
-                <span className="gradient-text">Every Face</span>
+                {t('hero.title')}{' '}
+                <span className="gradient-text">{t('hero.titleHighlight')}</span>
               </motion.h1>
 
               <motion.p
                 variants={fadeInUp}
                 className="text-xl text-navy-600 mb-8 max-w-xl mx-auto lg:mx-0"
               >
-                The assistive app designed for people with prosopagnosia.
-                Build lasting memories of the people who matter most with
-                science-backed training.
+                {t('hero.subtitle')}
               </motion.p>
 
               <motion.div
@@ -87,13 +127,13 @@ export default function Home() {
                   className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-navy-900 text-white rounded-full font-semibold hover:bg-navy-800 transition-all hover:scale-105 shadow-lg shadow-navy-900/25"
                 >
                   <Apple className="w-5 h-5" />
-                  Download on App Store
+                  {t('hero.downloadButton')}
                 </a>
                 <a
                   href="#how-it-works"
                   className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-navy-900 rounded-full font-semibold border-2 border-gray-200 hover:border-coral-300 transition-all"
                 >
-                  See How It Works
+                  {t('hero.howItWorksButton')}
                   <ChevronRight className="w-4 h-4" />
                 </a>
               </motion.div>
@@ -104,11 +144,11 @@ export default function Home() {
               >
                 <div className="flex items-center gap-2">
                   <Shield className="w-4 h-4 text-teal-500" />
-                  <span>Privacy-First</span>
+                  <span>{t('hero.privacyFirst')}</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Smartphone className="w-4 h-4 text-teal-500" />
-                  <span>On-Device Processing</span>
+                  <span>{t('hero.onDevice')}</span>
                 </div>
               </motion.div>
             </motion.div>
@@ -129,7 +169,7 @@ export default function Home() {
 
                     {/* App UI Preview */}
                     <div className="pt-12 px-5 pb-6 h-full bg-gradient-to-b from-gray-50 to-white">
-                      <h2 className="text-2xl font-bold text-navy-900 mb-6">Your People</h2>
+                      <h2 className="text-2xl font-bold text-navy-900 mb-6">{t('mockup.yourPeople')}</h2>
 
                       {/* People List */}
                       <div className="space-y-3">
@@ -163,15 +203,15 @@ export default function Home() {
                         <div className="flex items-center justify-around py-3 bg-navy-900 rounded-2xl">
                           <div className="flex flex-col items-center gap-1">
                             <Users className="w-5 h-5 text-white" />
-                            <span className="text-[10px] text-white">People</span>
+                            <span className="text-[10px] text-white">{t('mockup.people')}</span>
                           </div>
                           <div className="flex flex-col items-center gap-1">
                             <Brain className="w-5 h-5 text-gray-500" />
-                            <span className="text-[10px] text-gray-500">Practice</span>
+                            <span className="text-[10px] text-gray-500">{t('mockup.practice')}</span>
                           </div>
                           <div className="flex flex-col items-center gap-1">
                             <Camera className="w-5 h-5 text-gray-500" />
-                            <span className="text-[10px] text-gray-500">Capture</span>
+                            <span className="text-[10px] text-gray-500">{t('mockup.capture')}</span>
                           </div>
                         </div>
                       </div>
@@ -207,15 +247,15 @@ export default function Home() {
           <div className="flex flex-wrap items-center justify-center gap-8 md:gap-16 text-navy-600">
             <div className="flex items-center gap-2">
               <Shield className="w-5 h-5 text-teal-500" />
-              <span className="font-medium">Privacy-First Design</span>
+              <span className="font-medium">{t('trustBadges.privacyFirst')}</span>
             </div>
             <div className="flex items-center gap-2">
               <Smartphone className="w-5 h-5 text-teal-500" />
-              <span className="font-medium">100% On-Device Processing</span>
+              <span className="font-medium">{t('trustBadges.onDevice')}</span>
             </div>
             <div className="flex items-center gap-2">
               <Brain className="w-5 h-5 text-teal-500" />
-              <span className="font-medium">Science-Backed Learning</span>
+              <span className="font-medium">{t('trustBadges.scienceBacked')}</span>
             </div>
           </div>
         </div>
@@ -231,61 +271,17 @@ export default function Home() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-bold text-navy-900 mb-4">
-              Built for Your Brain
+              {t('features.title')}
             </h2>
             <p className="text-xl text-navy-600 max-w-2xl mx-auto">
-              Remet understands that face recognition works differently for everyone.
-              Every match is confirmed by you, never assumed.
+              {t('features.subtitle')}
             </p>
           </motion.div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                icon: Camera,
-                title: 'Capture & Import',
-                description: 'Take photos with the in-app camera or import from your library. Face detection happens instantly and privately on your device.',
-                color: 'text-coral-500',
-                bg: 'bg-coral-50',
-              },
-              {
-                icon: Users,
-                title: 'People Profiles',
-                description: 'Store names, relationships, birthdays, and personal notes. Remember how you met and what matters to each person.',
-                color: 'text-teal-500',
-                bg: 'bg-teal-50',
-              },
-              {
-                icon: Brain,
-                title: 'Spaced Repetition Training',
-                description: 'Scientifically-proven SM-2 algorithm adapts to your learning pace. Practice with faces you struggle with most.',
-                color: 'text-purple-500',
-                bg: 'bg-purple-50',
-              },
-              {
-                icon: MapPin,
-                title: 'Encounter Tracking',
-                description: 'Record where and when you met people. Build a timeline of your relationships with location and context.',
-                color: 'text-amber-500',
-                bg: 'bg-amber-50',
-              },
-              {
-                icon: Tags,
-                title: 'Smart Tagging',
-                description: 'Organize people with custom tags. Family, work colleagues, book club—find anyone instantly.',
-                color: 'text-blue-500',
-                bg: 'bg-blue-50',
-              },
-              {
-                icon: BarChart3,
-                title: 'Progress Insights',
-                description: 'Track your recognition accuracy over time. Celebrate improvements and identify areas to focus on.',
-                color: 'text-green-500',
-                bg: 'bg-green-50',
-              },
-            ].map((feature, index) => (
+            {features.map((feature, index) => (
               <motion.div
-                key={feature.title}
+                key={feature.titleKey}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -295,8 +291,12 @@ export default function Home() {
                 <div className={`w-14 h-14 ${feature.bg} rounded-xl flex items-center justify-center mb-6`}>
                   <feature.icon className={`w-7 h-7 ${feature.color}`} />
                 </div>
-                <h3 className="text-xl font-bold text-navy-900 mb-3">{feature.title}</h3>
-                <p className="text-navy-600 leading-relaxed">{feature.description}</p>
+                <h3 className="text-xl font-bold text-navy-900 mb-3">
+                  {t(`features.${feature.titleKey}.title`)}
+                </h3>
+                <p className="text-navy-600 leading-relaxed">
+                  {t(`features.${feature.titleKey}.description`)}
+                </p>
               </motion.div>
             ))}
           </div>
@@ -313,33 +313,17 @@ export default function Home() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-bold text-navy-900 mb-4">
-              How It Works
+              {t('howItWorks.title')}
             </h2>
             <p className="text-xl text-navy-600">
-              Three simple steps to better face recall
+              {t('howItWorks.subtitle')}
             </p>
           </motion.div>
 
           <div className="grid md:grid-cols-3 gap-8 md:gap-12">
-            {[
-              {
-                step: '1',
-                title: 'Add Faces',
-                description: 'Import photos from your camera or library. Remet detects faces and suggests matches—but you always confirm who\'s who.',
-              },
-              {
-                step: '2',
-                title: 'Build Profiles',
-                description: 'Add names, relationships, and personal details. The more context you add, the stronger your memory associations become.',
-              },
-              {
-                step: '3',
-                title: 'Practice Daily',
-                description: 'Quick quiz sessions adapt to your progress. Faces you find difficult appear more often until they stick.',
-              },
-            ].map((item, index) => (
+            {['step1', 'step2', 'step3'].map((step, index) => (
               <motion.div
-                key={item.step}
+                key={step}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -347,10 +331,14 @@ export default function Home() {
                 className="text-center"
               >
                 <div className="w-20 h-20 gradient-bg rounded-full flex items-center justify-center mx-auto mb-6 text-3xl font-bold text-white shadow-lg shadow-coral-500/30">
-                  {item.step}
+                  {index + 1}
                 </div>
-                <h3 className="text-2xl font-bold text-navy-900 mb-4">{item.title}</h3>
-                <p className="text-navy-600 leading-relaxed">{item.description}</p>
+                <h3 className="text-2xl font-bold text-navy-900 mb-4">
+                  {t(`howItWorks.${step}.title`)}
+                </h3>
+                <p className="text-navy-600 leading-relaxed">
+                  {t(`howItWorks.${step}.description`)}
+                </p>
               </motion.div>
             ))}
           </div>
@@ -372,20 +360,14 @@ export default function Home() {
             className="max-w-3xl mx-auto text-center"
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Your Privacy, Protected
+              {t('privacy.title')}
             </h2>
             <p className="text-xl text-gray-300 mb-12">
-              Remet processes all face data entirely on your device. No photos or biometric data
-              ever leave your phone unless you explicitly enable iCloud sync.
+              {t('privacy.description')}
             </p>
 
             <div className="grid sm:grid-cols-2 gap-6 text-left mb-12">
-              {[
-                'All face recognition happens on-device using Apple\'s secure frameworks',
-                'Zero third-party analytics or advertising',
-                'Optional iCloud sync uses your private iCloud account',
-                'You own your data—export or delete anytime',
-              ].map((item, index) => (
+              {[0, 1, 2, 3].map((index) => (
                 <motion.div
                   key={index}
                   initial={{ opacity: 0, x: -20 }}
@@ -397,7 +379,7 @@ export default function Home() {
                   <div className="w-6 h-6 bg-teal-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                     <Check className="w-4 h-4 text-white" />
                   </div>
-                  <span className="text-gray-200">{item}</span>
+                  <span className="text-gray-200">{t(`privacy.points.${index}`)}</span>
                 </motion.div>
               ))}
             </div>
@@ -406,7 +388,7 @@ export default function Home() {
               href="/privacy"
               className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 backdrop-blur border border-white/20 rounded-full font-semibold hover:bg-white/20 transition-colors"
             >
-              Read Our Privacy Policy
+              {t('privacy.readPolicy')}
               <ChevronRight className="w-4 h-4" />
             </a>
           </motion.div>
@@ -423,10 +405,10 @@ export default function Home() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-bold text-navy-900 mb-4">
-              Simple Pricing
+              {t('pricing.title')}
             </h2>
             <p className="text-xl text-navy-600">
-              Start free, upgrade when you&apos;re ready
+              {t('pricing.subtitle')}
             </p>
           </motion.div>
 
@@ -438,23 +420,16 @@ export default function Home() {
               viewport={{ once: true }}
               className="bg-white rounded-3xl p-8 shadow-sm border border-gray-200"
             >
-              <h3 className="text-2xl font-bold text-navy-900 mb-2">Free</h3>
+              <h3 className="text-2xl font-bold text-navy-900 mb-2">{t('pricing.free.name')}</h3>
               <div className="flex items-baseline gap-1 mb-6">
-                <span className="text-5xl font-bold text-navy-900">$0</span>
-                <span className="text-navy-500">forever</span>
+                <span className="text-5xl font-bold text-navy-900">{t('pricing.free.price')}</span>
+                <span className="text-navy-500">{t('pricing.free.period')}</span>
               </div>
               <ul className="space-y-4 mb-8">
-                {[
-                  'Up to 25 people',
-                  '5 custom tags',
-                  'Full face recognition',
-                  'Spaced repetition training',
-                  'Encounter tracking',
-                  'On-device storage',
-                ].map((feature) => (
-                  <li key={feature} className="flex items-center gap-3">
+                {[0, 1, 2, 3, 4, 5].map((index) => (
+                  <li key={index} className="flex items-center gap-3">
                     <Check className="w-5 h-5 text-teal-500" />
-                    <span className="text-navy-600">{feature}</span>
+                    <span className="text-navy-600">{t(`pricing.free.features.${index}`)}</span>
                   </li>
                 ))}
               </ul>
@@ -462,7 +437,7 @@ export default function Home() {
                 href="#"
                 className="block w-full py-4 text-center border-2 border-gray-200 rounded-full font-semibold text-navy-900 hover:border-coral-300 transition-colors"
               >
-                Get Started
+                {t('pricing.free.button')}
               </a>
             </motion.div>
 
@@ -475,25 +450,19 @@ export default function Home() {
               className="bg-white rounded-3xl p-8 shadow-xl border-2 border-coral-500 relative"
             >
               <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 gradient-bg rounded-full text-white text-sm font-semibold">
-                Most Popular
+                {t('pricing.premium.badge')}
               </div>
-              <h3 className="text-2xl font-bold text-navy-900 mb-2">Premium</h3>
+              <h3 className="text-2xl font-bold text-navy-900 mb-2">{t('pricing.premium.name')}</h3>
               <div className="flex items-baseline gap-1 mb-2">
-                <span className="text-5xl font-bold text-navy-900">$4.99</span>
-                <span className="text-navy-500">/month</span>
+                <span className="text-5xl font-bold text-navy-900">{t('pricing.premium.price')}</span>
+                <span className="text-navy-500">{t('pricing.premium.period')}</span>
               </div>
-              <p className="text-sm text-navy-500 mb-6">or $39.99/year (save 33%)</p>
+              <p className="text-sm text-navy-500 mb-6">{t('pricing.premium.yearly')}</p>
               <ul className="space-y-4 mb-8">
-                {[
-                  'Unlimited people',
-                  'Unlimited tags',
-                  'Everything in Free',
-                  'iCloud sync across devices',
-                  'Priority support',
-                ].map((feature) => (
-                  <li key={feature} className="flex items-center gap-3">
+                {[0, 1, 2, 3, 4].map((index) => (
+                  <li key={index} className="flex items-center gap-3">
                     <Check className="w-5 h-5 text-coral-500" />
-                    <span className="text-navy-600">{feature}</span>
+                    <span className="text-navy-600">{t(`pricing.premium.features.${index}`)}</span>
                   </li>
                 ))}
               </ul>
@@ -501,7 +470,7 @@ export default function Home() {
                 href="#"
                 className="block w-full py-4 text-center gradient-bg rounded-full font-semibold text-white hover:opacity-90 transition-opacity shadow-lg shadow-coral-500/30"
               >
-                Start Free Trial
+                {t('pricing.premium.button')}
               </a>
             </motion.div>
           </div>
@@ -522,17 +491,17 @@ export default function Home() {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Start Building Better Memories Today
+              {t('cta.title')}
             </h2>
             <p className="text-xl text-white/90 mb-10 max-w-2xl mx-auto">
-              Join thousands of people using Remet to strengthen their face recognition skills.
+              {t('cta.subtitle')}
             </p>
             <a
               href="#"
               className="inline-flex items-center gap-2 px-8 py-4 bg-white text-navy-900 rounded-full font-semibold hover:bg-gray-100 transition-colors shadow-lg"
             >
               <Apple className="w-5 h-5" />
-              Download on the App Store
+              {t('cta.button')}
             </a>
           </motion.div>
         </div>

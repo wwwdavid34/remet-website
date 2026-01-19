@@ -1,0 +1,153 @@
+{
+  "metadata": {
+    "title": "Remet - 記住每一張臉",
+    "description": "Remet幫助面部辨識障礙（臉盲症）患者透過智慧人臉配對和間隔重複訓練來辨識和記憶生活中的人。",
+    "ogTitle": "Remet - 記住每一張臉",
+    "ogDescription": "專為臉盲症患者設計的輔助應用程式。用科學訓練方法，牢記那些對你重要的人。"
+  },
+  "header": {
+    "features": "功能",
+    "howItWorks": "使用方法",
+    "pricing": "價格",
+    "privacy": "隱私",
+    "support": "支援",
+    "download": "下載"
+  },
+  "footer": {
+    "brand": "幫助臉盲症患者牢記那些重要的面孔。",
+    "product": "產品",
+    "features": "功能",
+    "pricing": "價格",
+    "howItWorks": "使用方法",
+    "legal": "法律資訊",
+    "supportTitle": "支援",
+    "privacyPolicy": "隱私權政策",
+    "termsOfService": "服務條款",
+    "helpCenter": "幫助中心",
+    "contactUs": "聯絡我們",
+    "copyright": "© {year} Remet. 保留所有權利。"
+  },
+  "home": {
+    "hero": {
+      "badge": "面部辨識障礙輔助技術",
+      "title": "記住",
+      "titleHighlight": "每一張臉",
+      "subtitle": "專為臉盲症患者設計的輔助應用程式。用科學訓練方法，牢記那些對你重要的人。",
+      "downloadButton": "在 App Store 下載",
+      "howItWorksButton": "了解使用方法",
+      "privacyFirst": "隱私優先",
+      "onDevice": "裝置端處理"
+    },
+    "trustBadges": {
+      "privacyFirst": "隱私優先設計",
+      "onDevice": "100% 裝置端處理",
+      "scienceBacked": "科學支持的學習方法"
+    },
+    "features": {
+      "title": "為你的大腦而設計",
+      "subtitle": "Remet理解每個人的面部辨識方式都不同。每次配對都由你確認，絕不自動假定。",
+      "captureImport": {
+        "title": "拍攝與匯入",
+        "description": "使用應用程式內相機拍照或從相簿匯入。人臉偵測在裝置上即時私密地完成。"
+      },
+      "peopleProfiles": {
+        "title": "人物檔案",
+        "description": "儲存姓名、關係、生日和個人備註。記住你們是如何相識的，以及對每個人來說重要的事情。"
+      },
+      "spacedRepetition": {
+        "title": "間隔重複訓練",
+        "description": "經科學驗證的SM-2演算法適應你的學習節奏。重點練習那些你難以辨識的面孔。"
+      },
+      "encounterTracking": {
+        "title": "相遇記錄",
+        "description": "記錄你在何時何地遇到某人。用地點和情境建構你的人際關係時間線。"
+      },
+      "smartTagging": {
+        "title": "智慧標籤",
+        "description": "用自訂標籤整理人物。家人、同事、讀書會——即時找到任何人。"
+      },
+      "progressInsights": {
+        "title": "進度分析",
+        "description": "追蹤你的辨識準確率變化。慶祝進步，發現需要重點關注的領域。"
+      }
+    },
+    "howItWorks": {
+      "title": "使用方法",
+      "subtitle": "三個簡單步驟，更好地記住面孔",
+      "step1": {
+        "title": "新增面孔",
+        "description": "從相機或相簿匯入照片。Remet偵測面孔並建議配對——但最終確認始終由你做出。"
+      },
+      "step2": {
+        "title": "建立檔案",
+        "description": "新增姓名、關係和個人詳情。你新增的情境越多，記憶關聯就越強。"
+      },
+      "step3": {
+        "title": "每日練習",
+        "description": "快速測驗根據你的進度調整。難以辨識的面孔會更頻繁出現，直到你記住為止。"
+      }
+    },
+    "privacy": {
+      "title": "你的隱私，受到保護",
+      "description": "Remet完全在裝置上處理所有面部資料。除非你明確啟用iCloud同步，否則照片或生物辨識資料永遠不會離開你的手機。",
+      "points": [
+        "所有面部辨識都使用Apple的安全框架在裝置上完成",
+        "零第三方分析或廣告",
+        "可選的iCloud同步使用你的私人iCloud帳戶",
+        "資料屬於你——隨時匯出或刪除"
+      ],
+      "readPolicy": "閱讀我們的隱私權政策"
+    },
+    "pricing": {
+      "title": "簡單定價",
+      "subtitle": "免費開始，準備好了再升級",
+      "free": {
+        "name": "免費版",
+        "price": "NT$0",
+        "period": "永久免費",
+        "features": [
+          "最多25人",
+          "5個自訂標籤",
+          "完整面部辨識功能",
+          "間隔重複訓練",
+          "相遇記錄",
+          "裝置端儲存"
+        ],
+        "button": "開始使用"
+      },
+      "premium": {
+        "name": "進階版",
+        "badge": "最受歡迎",
+        "price": "NT$90",
+        "period": "/月",
+        "yearly": "或 NT$590/年（省40%）",
+        "features": [
+          "無限人數",
+          "無限標籤",
+          "包含免費版所有功能",
+          "跨裝置iCloud同步",
+          "進階記憶分析"
+        ],
+        "button": "開始免費試用"
+      }
+    },
+    "cta": {
+      "title": "今天開始建立更好的記憶",
+      "subtitle": "加入數千名使用Remet增強面部辨識能力的使用者。",
+      "button": "在 App Store 下載"
+    },
+    "mockup": {
+      "yourPeople": "我的人脈",
+      "people": "人物",
+      "practice": "練習",
+      "capture": "拍攝"
+    }
+  },
+  "languageSwitcher": {
+    "label": "語言",
+    "en": "English",
+    "ja": "日本語",
+    "zh-cn": "简体中文",
+    "zh-tw": "繁體中文"
+  }
+}

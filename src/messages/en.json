@@ -1,0 +1,153 @@
+{
+  "metadata": {
+    "title": "Remet - Remember Every Face",
+    "description": "Remet helps people with face blindness (prosopagnosia) recognize and remember the people in their lives through intelligent face matching and spaced repetition training.",
+    "ogTitle": "Remet - Remember Every Face",
+    "ogDescription": "The assistive app designed for people with prosopagnosia. Build lasting memories of the people who matter most."
+  },
+  "header": {
+    "features": "Features",
+    "howItWorks": "How It Works",
+    "pricing": "Pricing",
+    "privacy": "Privacy",
+    "support": "Support",
+    "download": "Download"
+  },
+  "footer": {
+    "brand": "Helping people with prosopagnosia build lasting memories of the faces that matter most.",
+    "product": "Product",
+    "features": "Features",
+    "pricing": "Pricing",
+    "howItWorks": "How It Works",
+    "legal": "Legal",
+    "supportTitle": "Support",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "helpCenter": "Help Center",
+    "contactUs": "Contact Us",
+    "copyright": "© {year} Remet. All rights reserved."
+  },
+  "home": {
+    "hero": {
+      "badge": "Assistive Technology for Face Blindness",
+      "title": "Remember",
+      "titleHighlight": "Every Face",
+      "subtitle": "The assistive app designed for people with prosopagnosia. Build lasting memories of the people who matter most with science-backed training.",
+      "downloadButton": "Download on App Store",
+      "howItWorksButton": "See How It Works",
+      "privacyFirst": "Privacy-First",
+      "onDevice": "On-Device Processing"
+    },
+    "trustBadges": {
+      "privacyFirst": "Privacy-First Design",
+      "onDevice": "100% On-Device Processing",
+      "scienceBacked": "Science-Backed Learning"
+    },
+    "features": {
+      "title": "Built for Your Brain",
+      "subtitle": "Remet understands that face recognition works differently for everyone. Every match is confirmed by you, never assumed.",
+      "captureImport": {
+        "title": "Capture & Import",
+        "description": "Take photos with the in-app camera or import from your library. Face detection happens instantly and privately on your device."
+      },
+      "peopleProfiles": {
+        "title": "People Profiles",
+        "description": "Store names, relationships, birthdays, and personal notes. Remember how you met and what matters to each person."
+      },
+      "spacedRepetition": {
+        "title": "Spaced Repetition Training",
+        "description": "Scientifically-proven SM-2 algorithm adapts to your learning pace. Practice with faces you struggle with most."
+      },
+      "encounterTracking": {
+        "title": "Encounter Tracking",
+        "description": "Record where and when you met people. Build a timeline of your relationships with location and context."
+      },
+      "smartTagging": {
+        "title": "Smart Tagging",
+        "description": "Organize people with custom tags. Family, work colleagues, book club—find anyone instantly."
+      },
+      "progressInsights": {
+        "title": "Progress Insights",
+        "description": "Track your recognition accuracy over time. Celebrate improvements and identify areas to focus on."
+      }
+    },
+    "howItWorks": {
+      "title": "How It Works",
+      "subtitle": "Three simple steps to better face recall",
+      "step1": {
+        "title": "Add Faces",
+        "description": "Import photos from your camera or library. Remet detects faces and suggests matches—but you always confirm who's who."
+      },
+      "step2": {
+        "title": "Build Profiles",
+        "description": "Add names, relationships, and personal details. The more context you add, the stronger your memory associations become."
+      },
+      "step3": {
+        "title": "Practice Daily",
+        "description": "Quick quiz sessions adapt to your progress. Faces you find difficult appear more often until they stick."
+      }
+    },
+    "privacy": {
+      "title": "Your Privacy, Protected",
+      "description": "Remet processes all face data entirely on your device. No photos or biometric data ever leave your phone unless you explicitly enable iCloud sync.",
+      "points": [
+        "All face recognition happens on-device using Apple's secure frameworks",
+        "Zero third-party analytics or advertising",
+        "Optional iCloud sync uses your private iCloud account",
+        "You own your data—export or delete anytime"
+      ],
+      "readPolicy": "Read Our Privacy Policy"
+    },
+    "pricing": {
+      "title": "Simple Pricing",
+      "subtitle": "Start free, upgrade when you're ready",
+      "free": {
+        "name": "Free",
+        "price": "$0",
+        "period": "forever",
+        "features": [
+          "Up to 25 people",
+          "5 custom tags",
+          "Full face recognition",
+          "Spaced repetition training",
+          "Encounter tracking",
+          "On-device storage"
+        ],
+        "button": "Get Started"
+      },
+      "premium": {
+        "name": "Premium",
+        "badge": "Most Popular",
+        "price": "$2.99",
+        "period": "/month",
+        "yearly": "or $19.99/year (save 40%)",
+        "features": [
+          "Unlimited people",
+          "Unlimited tags",
+          "Everything in Free",
+          "iCloud sync across devices",
+          "Advanced memory analytics"
+        ],
+        "button": "Start Free Trial"
+      }
+    },
+    "cta": {
+      "title": "Start Building Better Memories Today",
+      "subtitle": "Join thousands of people using Remet to strengthen their face recognition skills.",
+      "button": "Download on the App Store"
+    },
+    "mockup": {
+      "yourPeople": "Your People",
+      "people": "People",
+      "practice": "Practice",
+      "capture": "Capture"
+    }
+  },
+  "languageSwitcher": {
+    "label": "Language",
+    "en": "English",
+    "ja": "日本語",
+    "zh-cn": "简体中文",
+    "zh-tw": "繁體中文"
+  }
+}

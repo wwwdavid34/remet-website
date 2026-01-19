@@ -1,0 +1,153 @@
+{
+  "metadata": {
+    "title": "Remet - すべての顔を記憶する",
+    "description": "Remetは、顔認識障害（相貌失認）を持つ方々が、インテリジェントな顔マッチングと間隔反復学習を通じて、周囲の人々を認識し記憶することをサポートします。",
+    "ogTitle": "Remet - すべての顔を記憶する",
+    "ogDescription": "相貌失認の方のために設計されたアシスティブアプリ。科学的な訓練で、大切な人々の顔を確実に記憶しましょう。"
+  },
+  "header": {
+    "features": "機能",
+    "howItWorks": "使い方",
+    "pricing": "料金",
+    "privacy": "プライバシー",
+    "support": "サポート",
+    "download": "ダウンロード"
+  },
+  "footer": {
+    "brand": "相貌失認の方々が大切な人々の顔を記憶し続けることをサポートします。",
+    "product": "製品",
+    "features": "機能",
+    "pricing": "料金",
+    "howItWorks": "使い方",
+    "legal": "法的情報",
+    "supportTitle": "サポート",
+    "privacyPolicy": "プライバシーポリシー",
+    "termsOfService": "利用規約",
+    "helpCenter": "ヘルプセンター",
+    "contactUs": "お問い合わせ",
+    "copyright": "© {year} Remet. All rights reserved."
+  },
+  "home": {
+    "hero": {
+      "badge": "顔認識障害のためのアシスティブテクノロジー",
+      "title": "すべての顔を",
+      "titleHighlight": "記憶する",
+      "subtitle": "相貌失認の方のために設計されたアシスティブアプリ。科学的な訓練で、大切な人々の顔を確実に記憶しましょう。",
+      "downloadButton": "App Storeでダウンロード",
+      "howItWorksButton": "使い方を見る",
+      "privacyFirst": "プライバシー重視",
+      "onDevice": "デバイス内処理"
+    },
+    "trustBadges": {
+      "privacyFirst": "プライバシーファースト設計",
+      "onDevice": "100%デバイス内処理",
+      "scienceBacked": "科学的根拠に基づく学習"
+    },
+    "features": {
+      "title": "あなたの脳のために設計",
+      "subtitle": "Remetは、顔認識が人それぞれ異なることを理解しています。すべてのマッチングはあなたが確認し、自動で決定されることはありません。",
+      "captureImport": {
+        "title": "撮影＆インポート",
+        "description": "アプリ内カメラで写真を撮るか、ライブラリからインポート。顔検出はデバイス上で即座にプライベートに行われます。"
+      },
+      "peopleProfiles": {
+        "title": "人物プロフィール",
+        "description": "名前、関係性、誕生日、メモを保存。出会った経緯や大切なことを記録できます。"
+      },
+      "spacedRepetition": {
+        "title": "間隔反復トレーニング",
+        "description": "科学的に実証されたSM-2アルゴリズムがあなたの学習ペースに適応。苦手な顔を重点的に練習できます。"
+      },
+      "encounterTracking": {
+        "title": "出会い記録",
+        "description": "いつどこで会ったかを記録。場所とコンテキストで関係性のタイムラインを構築します。"
+      },
+      "smartTagging": {
+        "title": "スマートタグ付け",
+        "description": "カスタムタグで整理。家族、職場の同僚、読書会など—誰でもすぐに見つけられます。"
+      },
+      "progressInsights": {
+        "title": "進捗インサイト",
+        "description": "認識精度を時系列で追跡。改善を祝い、注力すべき領域を特定します。"
+      }
+    },
+    "howItWorks": {
+      "title": "使い方",
+      "subtitle": "3つの簡単なステップで顔を覚える",
+      "step1": {
+        "title": "顔を追加",
+        "description": "カメラやライブラリから写真をインポート。Remetが顔を検出してマッチングを提案しますが、最終確認は常にあなたが行います。"
+      },
+      "step2": {
+        "title": "プロフィール作成",
+        "description": "名前、関係性、個人的な詳細を追加。コンテキストを追加するほど、記憶の関連付けが強くなります。"
+      },
+      "step3": {
+        "title": "毎日練習",
+        "description": "短いクイズセッションがあなたの進捗に適応。苦手な顔は覚えるまで頻繁に出題されます。"
+      }
+    },
+    "privacy": {
+      "title": "あなたのプライバシーを保護",
+      "description": "Remetはすべての顔データをデバイス上で完全に処理します。iCloud同期を明示的に有効にしない限り、写真や生体データがデバイスから外に出ることはありません。",
+      "points": [
+        "すべての顔認識はAppleのセキュアなフレームワークを使用してデバイス上で行われます",
+        "サードパーティの分析や広告は一切ありません",
+        "オプションのiCloud同期はあなたのプライベートなiCloudアカウントを使用します",
+        "データはあなたのもの—いつでもエクスポートまたは削除可能"
+      ],
+      "readPolicy": "プライバシーポリシーを読む"
+    },
+    "pricing": {
+      "title": "シンプルな料金",
+      "subtitle": "無料で始めて、準備ができたらアップグレード",
+      "free": {
+        "name": "無料",
+        "price": "¥0",
+        "period": "永久に",
+        "features": [
+          "最大25人まで",
+          "5つのカスタムタグ",
+          "フル顔認識機能",
+          "間隔反復トレーニング",
+          "出会い記録",
+          "デバイス内ストレージ"
+        ],
+        "button": "始める"
+      },
+      "premium": {
+        "name": "プレミアム",
+        "badge": "人気No.1",
+        "price": "¥450",
+        "period": "/月",
+        "yearly": "または年間¥3,000（40%お得）",
+        "features": [
+          "無制限の人数",
+          "無制限のタグ",
+          "無料プランのすべての機能",
+          "デバイス間iCloud同期",
+          "高度な記憶分析"
+        ],
+        "button": "無料トライアルを開始"
+      }
+    },
+    "cta": {
+      "title": "今日からより良い記憶を築こう",
+      "subtitle": "顔認識スキルを強化するためにRemetを使用している何千人もの人々に参加しましょう。",
+      "button": "App Storeでダウンロード"
+    },
+    "mockup": {
+      "yourPeople": "あなたの人々",
+      "people": "人々",
+      "practice": "練習",
+      "capture": "撮影"
+    }
+  },
+  "languageSwitcher": {
+    "label": "言語",
+    "en": "English",
+    "ja": "日本語",
+    "zh-cn": "简体中文",
+    "zh-tw": "繁體中文"
+  }
+}

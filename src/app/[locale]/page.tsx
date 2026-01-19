@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { useTranslations } from 'next-intl'
 import {
@@ -153,7 +154,7 @@ export default function Home() {
               </motion.div>
             </motion.div>
 
-            {/* Right: Phone Mockup */}
+            {/* Right: Phone Screenshot */}
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -161,62 +162,16 @@ export default function Home() {
               className="relative flex justify-center"
             >
               <div className="relative">
-                {/* Phone Frame */}
-                <div className="w-[280px] sm:w-[320px] h-[580px] sm:h-[660px] bg-navy-900 rounded-[50px] p-3 shadow-2xl shadow-navy-900/40">
-                  <div className="w-full h-full bg-white rounded-[40px] overflow-hidden relative">
-                    {/* Notch */}
-                    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-7 bg-navy-900 rounded-b-2xl" />
-
-                    {/* App UI Preview */}
-                    <div className="pt-12 px-5 pb-6 h-full bg-gradient-to-b from-gray-50 to-white">
-                      <h2 className="text-2xl font-bold text-navy-900 mb-6">{t('mockup.yourPeople')}</h2>
-
-                      {/* People List */}
-                      <div className="space-y-3">
-                        {[
-                          { name: 'Sarah Chen', tag: 'Family', color: 'bg-coral-400' },
-                          { name: 'Marcus Johnson', tag: 'Work', color: 'bg-teal-400' },
-                          { name: 'Emily Davis', tag: 'Friend', color: 'bg-purple-400' },
-                          { name: 'Alex Kim', tag: 'Gym', color: 'bg-amber-400' },
-                        ].map((person, i) => (
-                          <motion.div
-                            key={person.name}
-                            initial={{ opacity: 0, x: -20 }}
-                            animate={{ opacity: 1, x: 0 }}
-                            transition={{ delay: 0.5 + i * 0.1 }}
-                            className="flex items-center gap-3 p-3 bg-white rounded-2xl shadow-sm border border-gray-100"
-                          >
-                            <div className={`w-12 h-12 ${person.color} rounded-full flex items-center justify-center text-white font-semibold text-lg`}>
-                              {person.name.split(' ').map(n => n[0]).join('')}
-                            </div>
-                            <div className="flex-1">
-                              <p className="font-semibold text-navy-900">{person.name}</p>
-                              <p className="text-sm text-gray-500">{person.tag}</p>
-                            </div>
-                            <ChevronRight className="w-5 h-5 text-gray-300" />
-                          </motion.div>
-                        ))}
-                      </div>
-
-                      {/* Bottom Nav */}
-                      <div className="absolute bottom-6 left-5 right-5">
-                        <div className="flex items-center justify-around py-3 bg-navy-900 rounded-2xl">
-                          <div className="flex flex-col items-center gap-1">
-                            <Users className="w-5 h-5 text-white" />
-                            <span className="text-[10px] text-white">{t('mockup.people')}</span>
-                          </div>
-                          <div className="flex flex-col items-center gap-1">
-                            <Brain className="w-5 h-5 text-gray-500" />
-                            <span className="text-[10px] text-gray-500">{t('mockup.practice')}</span>
-                          </div>
-                          <div className="flex flex-col items-center gap-1">
-                            <Camera className="w-5 h-5 text-gray-500" />
-                            <span className="text-[10px] text-gray-500">{t('mockup.capture')}</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                {/* Phone Frame with Screenshot */}
+                <div className="relative w-[280px] sm:w-[320px] rounded-[40px] shadow-2xl shadow-navy-900/40 overflow-hidden">
+                  <Image
+                    src="/screenshots/people-home.png"
+                    alt="Remet App - People List"
+                    width={320}
+                    height={693}
+                    className="w-full h-auto"
+                    priority
+                  />
                 </div>
 
                 {/* Floating elements */}

@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/routing'
 import { Menu, X } from 'lucide-react'
@@ -31,21 +32,13 @@ export function Header() {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-xl gradient-bg flex items-center justify-center">
-              <svg
-                className="w-6 h-6 text-white"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-                />
-              </svg>
-            </div>
+            <Image
+              src="/icon-192.png"
+              alt="Remet"
+              width={40}
+              height={40}
+              className="rounded-xl"
+            />
             <span className="text-xl font-bold text-navy-900">Remet</span>
           </Link>
 
